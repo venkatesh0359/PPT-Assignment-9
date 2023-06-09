@@ -5,14 +5,11 @@ public class Question7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Get the string from the user
         String str = scanner.next();
 
-        // Find all permutations of the string
         ArrayList<String> permutations = new ArrayList<>();
         findPermutations(str, "", permutations);
 
-        // Print all permutations
         for (String permutation : permutations) {
             System.out.println(permutation);
         }
