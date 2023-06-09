@@ -1,1 +1,20 @@
+import java.util.Scanner;
+
+public class Question6 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the first term, common difference, and Nth term from the user
+        int a = scanner.nextInt();
+        int d = scanner.nextInt();
+        int n = scanner.nextInt();
+
+        // Find the Nth term of the arithmetic progression
+        int nthTerm = a + (n - 1) * d;
+
+        // Print the Nth term
+        System.out.println("The " + n + "th term of the series is: " + nthTerm);
+    }
+}
 
